@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Countries and States</title>
+
+</head>
+
+<body>
+    <script src="main.JS"></script>
+    <form>
+        <div> Please select a Country
+            <select id="country-dropdown" name="dropdown" class="country-dropdown" onchange="changeList()">
+                <option id="" value="" disabled selected hidden>Select</option>
+            </select>
+        </div><br>
+        <div>Please select that Country's state <select id="state-dropdown">
+                <option value="" disabled selected hidden>Select</option>
+            </select></div>
+    </form>
+    <form>
+
+        <div><br><label>Add a Country to this list if not listed above
+                <input id="country-input" name="name" required /></label>
+
+            <label>What is the abbreviation for this country?
+                <input id="code-input" name="code" required /></label>
+        </div>
+        <div><br><button type="button" onclick="addCountryEvent()">Submit</button></div>
+    </form>
+    <form>
+
+        <div><br><label>Add a State to this list if not listed above
+                <input id="state-input" name="name" required /></label>
+
+            <label>What is the abbreviation for this state?</label>
+
+            <input id="statecode-input" name="code" required /></label>
+
+
+            <label>Which country would you like to add a new state to?<select id="country-dropdown-state"
+                    name="dropdown" class="country-dropdown">
+                    <option id="" value="" disabled selected hidden>Select</option>
+                </select></label>
+        </div>
+        <div><br><button type="button" onclick="addStateEvent()">Submit</button></div>
+
+    </form>
+
+</body>
+
+</html>
